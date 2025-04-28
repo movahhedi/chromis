@@ -2,6 +2,7 @@
 	"name": "chromis",
 	"version": "0.1.0",
 	"description": "Chrome extension with custom new tab page",
+	"type": "module",
 	"main": "index.js",
 	"scripts": {
 		"dev": "vite",
@@ -17,5 +18,9 @@
 		"sass": "^1.87.0",
 		"typescript": "^5.8.3",
 		"vite": "^6.3.3"
+	},
+	"dependencies": {
+		"adhan": "^4.4.3",
+		"persian-date": "^1.1.0"
 	}
 }
