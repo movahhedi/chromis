@@ -2,11 +2,8 @@
 // import ImageUrlLow from "./images/back-low.png";
 import PersianDate from "persian-date";
 import { Coordinates, CalculationMethod, PrayerTimes } from "adhan";
-import { c } from "vite/dist/node/moduleRunnerTransport.d-DJ_mE5sf";
 
 const coordinates = new Coordinates(35.7, 51.42);
-const date = new Date();
-const prayerTimes = new PrayerTimes(coordinates, date, CalculationMethod.Tehran());
 
 function getNextPrayer() {
 	// Get current date and prayer times for today
@@ -99,16 +96,14 @@ const newTabPage = (
 			<div class="date">{persianWeekday}</div>
 		</div>
 		<div class="content-end">
-			<div>
-			</div>
+			<div></div>
 			<div>
 				<div class="next-prayer">
 					<h1 class="next-prayer-time">{getNextPrayer().time}</h1>
 					<p class="next-prayer-name">{getNextPrayer().persianName}</p>
 				</div>
 			</div>
-			<div>
-			</div>
+			<div></div>
 		</div>
 	</div>
 );
