@@ -1,8 +1,22 @@
-@import "./style.scss";
+* {
+	position: relative;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	min-width: 0;
+}
 
 html,
 body {
 	background: #1e1e1e;
+	font-family: "Vazirmatn FD", "Segoe UI", sans-serif;
+	// font-family: "Vazirmatn NL", "Segoe UI", sans-serif;
+	// font-family: "Segoe UI", sans-serif;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	color: #333;
 }
 
 .new-tab-page {
